@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <title>url2slack's Options</title>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>url2slack Options</h1>
+    <div id="options">
+      <div>
+        <label for="teamName">Team Name: </label>
+        <input type="text" id="teamName" v-model="teamName"/>
+      </div>
+      <div>
+        <label for="channel">Channel: </label>
+        <input type="text" id="channel" v-model="channel"/>
+      </div>
+      <div>
+        <label for="token">Token: </label>
+        <input type="text" id="token" v-model="token"/>
+      </div>
+
+      <button type="button" v-on="click: saveOptions">Update Options</button>
+    </div>
+    <span id="status"></span>
+
+    <script src="dest/options.js"></script>
+  </body>
+</html>
