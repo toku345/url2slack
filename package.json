@@ -4,7 +4,8 @@
   "description": "Send `url` to your slack channel!",
   "main": "manifest.json",
   "scripts": {
-    "build": "gulp watch",
+    "build": "gulp build",
+    "watch": "gulp default",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
